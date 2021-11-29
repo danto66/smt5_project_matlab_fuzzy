@@ -1,0 +1,47 @@
+[System]
+Name='mamdani'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=9
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='lab_a'
+Range=[-100 100]
+NumMFs=3
+MF1='sedikit':'trapmf',[-100 -100 -15.7 14.7]
+MF2='sedang':'trimf',[-15.7 14.7 41.4]
+MF3='banyak':'trapmf',[14.7 41.4 100 100]
+
+[Input2]
+Name='hsv_h'
+Range=[0 1]
+NumMFs=3
+MF1='sedikit':'trapmf',[0 0 0.044 0.106]
+MF2='sedang':'trimf',[0.044 0.106 0.181]
+MF3='banyak':'trapmf',[0.106 0.181 1 1]
+
+[Output1]
+Name='output1'
+Range=[0 10]
+NumMFs=3
+MF1='mentah':'trapmf',[0 0 1 3]
+MF2='setengah':'trimf',[2 5 8]
+MF3='matang':'trapmf',[7 9 10 10]
+
+[Rules]
+1 1, 2 (1) : 1
+1 2, 1 (1) : 1
+1 3, 1 (1) : 1
+2 1, 3 (1) : 1
+2 2, 2 (1) : 1
+2 3, 1 (1) : 1
+3 1, 3 (1) : 1
+3 2, 3 (1) : 1
+3 3, 2 (1) : 1
