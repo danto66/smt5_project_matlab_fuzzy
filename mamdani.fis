@@ -13,11 +13,11 @@ DefuzzMethod='centroid'
 
 [Input1]
 Name='lab_a'
-Range=[-100 100]
+Range=[-128 128]
 NumMFs=3
-MF1='sedikit':'trapmf',[-100 -100 -15.7 14.7]
-MF2='sedang':'trimf',[-15.7 14.7 41.4]
-MF3='banyak':'trapmf',[14.7 41.4 100 100]
+MF1='sedikit':'trapmf',[-128 -128 -15.56 14.67]
+MF2='sedang':'trimf',[-15.56 14.67 41.44]
+MF3='banyak':'trapmf',[14.67 41.44 128 128]
 
 [Input2]
 Name='hsv_h'
