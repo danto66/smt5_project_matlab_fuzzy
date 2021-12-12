@@ -15,17 +15,17 @@ DefuzzMethod='centroid'
 Name='lab_a'
 Range=[-128 128]
 NumMFs=3
-MF1='sedikit':'trapmf',[-128 -128 -15.56 14.67]
-MF2='sedang':'trimf',[-15.56 14.67 41.44]
-MF3='banyak':'trapmf',[14.67 41.44 128 128]
+MF1='sedikit':'trapmf',[-128 -128 -16.55 11.88947329]
+MF2='sedang':'trimf',[-16.55 11.88947329 35.73]
+MF3='banyak':'trapmf',[11.89 35.73 128 128]
 
 [Input2]
 Name='hsv_h'
 Range=[0 1]
 NumMFs=3
-MF1='sedikit':'trapmf',[0 0 0.044 0.106]
-MF2='sedang':'trimf',[0.044 0.106 0.181]
-MF3='banyak':'trapmf',[0.106 0.181 1 1]
+MF1='sedikit':'trapmf',[0 0 0.05062 0.111184563]
+MF2='sedang':'trimf',[0.05062 0.1112 0.184453840346153]
+MF3='banyak':'trapmf',[0.111184563 0.1845 1 1]
 
 [Output1]
 Name='output1'
